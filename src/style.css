@@ -53,6 +53,10 @@ a {
   color: inherit;
 }
 
+.web-externa {
+  color:#FD0201
+}
+
 .texto-azul {
   color: #0666B8;
 }
@@ -184,6 +188,12 @@ dd {
 
 .imagenes-paralelas img {
   width: 50%;
+}
+
+.enlaces{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 iframe {
