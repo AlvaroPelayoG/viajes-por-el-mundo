@@ -54,7 +54,7 @@ a {
 }
 
 .web-externa {
-  color:#FD0201
+  color: #FD0201
 }
 
 .texto-azul {
@@ -95,7 +95,8 @@ nav li {
 }
 
 nav li:hover {
-  background-color: #0666B8;
+  animation-name: animacionBasica;
+  animation-duration: 1s;
 }
 
 .footer {
@@ -190,7 +191,7 @@ dd {
   width: 50%;
 }
 
-.enlaces{
+.enlaces {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -295,4 +296,76 @@ p {
   body {
     gap: 15px;
   }
+}
+
+
+
+svg{
+  width: 48px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+}
+
+
+
+/* ANIMACION */
+
+@keyframes animacionBasica {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-4px, 4px);
+  }
+
+  40% {
+    transform: translate(-4px, -4px);
+  }
+
+  60% {
+    transform: translate(4px, 4px);
+  }
+
+  80% {
+    transform: translate(4px, -4px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+
+@keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: #FD0201;
+  }
+}
+
+.svg-elem-1 {
+          animation: animate-svg-fill-1 0.7s ease-in-out 0.8s both;
+}
+
+
+@keyframes animate-svg-fill-2 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
+
+.svg-elem-2 {
+          animation: animate-svg-fill-2 2.5s ease-in-out 0.9s both;
+          animation-iteration-count: infinite;
+            clip-path: circle(50%);
+
 }
